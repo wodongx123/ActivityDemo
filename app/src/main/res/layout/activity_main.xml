@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ActivityDemo\n可以在这里尝试有关生命周期和返回栈的方法。\n
+        1.Alert Dialog打开一个Dialog，查看生命周期的log日志。\n
+        2.Dialog Activity打开一个窗口Activity。查看log日志。\n
+        3.A B按钮打开ActivityA和ActivityB，在AndroidManifest.xml中修改启动方式后调试。\n
+        4.横屏后查看log日志，取消注释在修改AndroidManifest后再调试查看一次log。"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALERT DIALOG"/>
+
+    <Button
+        android:id="@+id/btn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIALOG ACTIVITY"/>
+
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"/>
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"/>
+
+</LinearLayout>
